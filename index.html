@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>BEC MEP DESIGN CONSULTING & CONTRACTING ENGINEERS</title>
     <meta name="description"
         content="Engineering Excellence. Reliable Solutions. Complete MEP Services across India. Govt 'C' Licensed Electrical Contractor." />
@@ -117,7 +117,7 @@
             position: fixed;
             inset: 0;
             width: 100vw;
-            height: 100vh;
+            height: 100dvh;
             z-index: 999999;
             overflow: hidden;
             pointer-events: none;
@@ -141,7 +141,7 @@
         #logoVideoRig {
             position: relative;
             z-index: 3;
-            width: clamp(320px, 46vw, 620px);
+            width: clamp(280px, 46vw, 620px);
         }
 
         #logoVideoRig video {
@@ -162,7 +162,7 @@
         #mainWebsiteContainer {
             position: relative;
             width: 100%;
-            min-height: 100vh;
+            min-height: 100dvh;
             transform-origin: 60.8% 47.3%;
             transform: scale(0.22);
             transition: transform 1.35s cubic-bezier(0.7, 0, 0.2, 1);
@@ -175,7 +175,7 @@
         }
 
         /* ----------------------------------------------------
-           2. THEME & FULL HERO BACKGROUND VIDEO (NO SHADOW/ROLL)
+           2. THEME & FULL HERO BACKGROUND VIDEO
         ---------------------------------------------------- */
         .hero-premium-bg {
             background-color: #030816;
@@ -197,8 +197,8 @@
 
         .logo-pure-transparent {
             position: relative;
-            width: 320px;
-            height: 95px;
+            width: 260px;
+            height: 80px;
             background: transparent !important;
             border: none !important;
             box-shadow: none !important;
@@ -221,7 +221,7 @@
 
         .hero-title {
             font-family: 'Overpass', sans-serif;
-            font-size: clamp(2rem, 3.8vw, 3.2rem);
+            font-size: clamp(1.8rem, 3.8vw, 3.2rem);
             line-height: 1.15;
         }
 
@@ -346,7 +346,7 @@
         }
 
         /* ----------------------------------------------------
-           5. ABOUT SECTION WITH BACKGROUND VIDEO RUNNING BEHIND THE BOX
+           5. ABOUT SECTION
         ---------------------------------------------------- */
         .mep-harness-section {
             position: relative;
@@ -434,12 +434,14 @@
             .spotlight-img-stage {
                 height: 260px;
             }
+            .mep-central-card {
+                padding: 2.5rem 1.5rem 2rem;
+            }
         }
     </style>
 </head>
 
-<body
-    class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-amberBrand selection:text-slate-950" style="font-family: 'Overpass', sans-serif;">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-amberBrand selection:text-slate-950" style="font-family: 'Overpass', sans-serif;">
 
     <!-- ====================================================
          CINEMATIC TRACK-IN 'C' PORTAL ENGINE
@@ -461,8 +463,7 @@
     <div id="mainWebsiteContainer">
 
         <!-- 1. TOP NOTIFICATION BAR -->
-        <div
-            class="bg-gradient-to-r from-obsidian-950 via-obsidian-900 to-slate-900 text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-amberBrand/30 relative z-40">
+        <div class="bg-gradient-to-r from-obsidian-950 via-obsidian-900 to-slate-900 text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-amberBrand/30 relative z-40">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
                 <div class="flex items-center gap-2 font-medium tracking-wide text-amber-400">
                     <i class="fa-solid fa-certificate"></i>
@@ -492,7 +493,7 @@
         <!-- 2. NAVBAR -->
         <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-sm transition-all">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-28">
+                <div class="flex justify-between items-center h-20 sm:h-24">
 
                     <a href="#home" class="flex items-center cursor-pointer">
                         <div class="logo-pure-transparent">
@@ -543,10 +544,10 @@
             </div>
         </header>
 
-        <!-- 3. HERO SECTION WITH FULL BACKGROUND VIDEO & RIGHT CONTENT BOX (NO SHADOW/ROLL) -->
+        <!-- 3. HERO SECTION -->
         <div>
             <section id="home"
-                class="relative hero-premium-bg hero-grid-overlay text-white pt-24 pb-32 border-b border-slate-800/80 overflow-hidden">
+                class="relative hero-premium-bg hero-grid-overlay text-white pt-16 pb-24 sm:pt-24 sm:pb-32 border-b border-slate-800/80 overflow-hidden">
 
                 <!-- Full Background Video -->
                 <video class="hero-bg-video" autoplay loop muted playsinline preload="auto">
@@ -554,9 +555,7 @@
                     Your browser does not support the video tag.
                 </video>
 
-                <div
-                    class="absolute top-1/4 right-1/4 w-[650px] h-[320px] bg-electric/20 rounded-full blur-[130px] pointer-events-none z-10">
-                </div>
+                <div class="absolute top-1/4 right-1/4 w-[650px] h-[320px] bg-electric/20 rounded-full blur-[130px] pointer-events-none z-10"></div>
 
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center min-h-[520px]">
@@ -565,9 +564,9 @@
                         <div class="hidden lg:block lg:col-span-5"></div>
 
                         <!-- RIGHT SIDE: BRIGHT HEADINGS & CONTENT BOX -->
-                        <div class="lg:col-span-7 text-center lg:text-left bg-slate-950/75 backdrop-blur-md p-8 sm:p-10 rounded-3xl border border-white/20 shadow-2xl relative z-40">
+                        <div class="lg:col-span-7 text-center lg:text-left bg-slate-950/85 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-white/20 shadow-2xl relative z-40">
                             <div
-                                class="inline-flex items-center gap-2.5 bg-slate-900/95 border border-slate-700 text-amber-400 text-[11px] sm:text-xs uppercase tracking-[0.2em] px-5 py-2.5 rounded-full mb-6 font-bold shadow-2xl">
+                                class="inline-flex items-center gap-2.5 bg-slate-900/95 border border-slate-700 text-amber-400 text-[11px] sm:text-xs uppercase tracking-[0.2em] px-4 py-2 sm:px-5 sm:py-2.5 rounded-full mb-6 font-bold shadow-2xl">
                                 <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
                                 Turnkey MEP Solutions From Concept to Completion
                             </div>
@@ -579,8 +578,7 @@
                                 </span>
                             </h1>
 
-                            <p
-                                class="text-white text-base sm:text-lg font-bold leading-relaxed mb-8 tracking-wide max-w-2xl drop-shadow-[0_4px_20px_rgba(0,0,0,1)]" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9);">
+                            <p class="text-white text-sm sm:text-lg font-bold leading-relaxed mb-8 tracking-wide max-w-2xl drop-shadow-[0_4px_20px_rgba(0,0,0,1)]" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9);">
                                 Over 7+ years of specialized industry experience delivering compliant, energy-efficient,
                                 and technically
                                 sound MEP installations across Mechanical, Electrical, Plumbing, Fire Fighting, HVAC, STP, WTP, Solar & Wind energy sectors.
@@ -646,44 +644,32 @@
         <section id="pillars" class="relative -mt-6 lg:-mt-2 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-electric hover:-translate-y-1.5 transition-all group">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-blue-50 text-electric flex items-center justify-center text-2xl mb-4 group-hover:bg-electric group-hover:text-white transition-colors">
+                <div class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-electric hover:-translate-y-1.5 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-electric flex items-center justify-center text-2xl mb-4 group-hover:bg-electric group-hover:text-white transition-colors">
                         <i class="fa-solid fa-plug-circle-bolt"></i>
                     </div>
                     <h3 class="font-display font-bold text-lg text-slate-900 tracking-wide mb-1">INSTALLATIONS</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Precision HT/LT power distribution, cabling,
-                        panels, solar & wind setups, and hardware deployment.</p>
+                    <p class="text-xs text-slate-500 leading-relaxed">Precision HT/LT power distribution, cabling, panels, solar & wind setups, and hardware deployment.</p>
                 </div>
 
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-amberBrand hover:-translate-y-1.5 transition-all group">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-amber-50 text-amberBrand flex items-center justify-center text-2xl mb-4 group-hover:bg-amberBrand group-hover:text-white transition-colors">
+                <div class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-amberBrand hover:-translate-y-1.5 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-50 text-amberBrand flex items-center justify-center text-2xl mb-4 group-hover:bg-amberBrand group-hover:text-white transition-colors">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
                     <h3 class="font-display font-bold text-lg text-slate-900 tracking-wide mb-1">MAINTENANCE</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">24/7 Breakdown handling, STP/WTP audits, planned Annual
-                        Maintenance Contracts (AMC), and factory audits.</p>
+                    <p class="text-xs text-slate-500 leading-relaxed">24/7 Breakdown handling, STP/WTP audits, planned Annual Maintenance Contracts (AMC), and factory audits.</p>
                 </div>
 
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-emerald-600 hover:-translate-y-1.5 transition-all group">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <div class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-emerald-600 hover:-translate-y-1.5 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="font-display font-bold text-lg text-slate-900 tracking-wide mb-1">SAFETY</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Rigorous safety standards, CEIG regulations,
-                        earthing
-                        verification, and fire fighting protection systems.</p>
+                    <p class="text-xs text-slate-500 leading-relaxed">Rigorous safety standards, CEIG regulations, earthing verification, and fire fighting protection systems.</p>
                 </div>
 
-                <div
-                    class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-indigo-600 hover:-translate-y-1.5 transition-all group">
-                    <div
-                        class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                <div class="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-indigo-600 hover:-translate-y-1.5 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                         <i class="fa-solid fa-lightbulb"></i>
                     </div>
                     <h3 class="font-display font-bold text-lg text-slate-900 tracking-wide mb-1">INNOVATION</h3>
@@ -694,33 +680,24 @@
         </section>
 
         <!-- 5. EXECUTIVE LEADERSHIP SPOTLIGHT -->
-        <section id="leadership" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
-            <div
-                class="bg-gradient-to-r from-obsidian-950 via-slate-900 to-slate-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden border border-amberBrand/20">
-                <div
-                    class="absolute -right-16 -bottom-16 w-80 h-80 bg-amberBrand/10 rounded-full blur-3xl pointer-events-none">
-                </div>
+        <section id="leadership" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
+            <div class="bg-gradient-to-r from-obsidian-950 via-slate-900 to-slate-950 rounded-3xl p-6 sm:p-12 text-white shadow-2xl relative overflow-hidden border border-amberBrand/20">
+                <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-amberBrand/10 rounded-full blur-3xl pointer-events-none"></div>
 
                 <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 relative z-10">
                     <div class="relative flex-shrink-0">
-                        <div
-                            class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-amberBrand flex items-center justify-center bg-slate-800 shadow-2xl text-amber-400">
+                        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-amberBrand flex items-center justify-center bg-slate-800 shadow-2xl text-amber-400">
                             <i class="fa-solid fa-user-tie text-6xl sm:text-7xl"></i>
                         </div>
-                        <span
-                            class="absolute bottom-1 right-2 bg-amberBrand text-slate-950 font-black text-[11px] px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow">
+                        <span class="absolute bottom-1 right-2 bg-amberBrand text-slate-950 font-black text-[11px] px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow">
                             Govt C
                         </span>
                     </div>
 
                     <div class="text-center lg:text-left flex-1">
-                        <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Executive Leadership &
-                            Competency</span>
-                        <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1 mb-2">S. JAGIR
-                            HUSSAIN
-                        </h2>
-                        <div
-                            class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs sm:text-sm font-semibold px-3 py-1 rounded-md mb-4">
+                        <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Executive Leadership & Competency</span>
+                        <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-white mt-1 mb-2">S. JAGIR HUSSAIN</h2>
+                        <div class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs sm:text-sm font-semibold px-3 py-1 rounded-md mb-4">
                             GOVT 'C' LICENSED ELECTRICAL CONTRACTOR • MEP CONSULTANT
                         </div>
                         <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl mb-6">
@@ -749,10 +726,8 @@
             </div>
         </section>
 
-        <!-- ABOUT SECTION WITH BACKGROUND VIDEO RUNNING BEHIND THE WHO WE ARE BOX -->
+        <!-- ABOUT SECTION -->
         <section id="about" class="mep-harness-section">
-
-            <!-- பின்னணியில் ஓடும் இன்ஜினியரிங் வீடியோ லேயர் (Background Video behind the box) -->
             <video class="about-bg-video" autoplay loop muted playsinline preload="auto">
                 <source src="v19.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -761,10 +736,8 @@
             <div class="mep-harness-container">
                 <div class="mep-central-card fade-in-up" id="aboutCard">
                     <div class="text-center relative z-10">
-                        <span class="text-electric font-bold text-xs uppercase tracking-widest font-grotesk">Company
-                            Overview</span>
-                        <h2
-                            class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2 mb-3 text-glow-shimmer">
+                        <span class="text-electric font-bold text-xs uppercase tracking-widest font-grotesk">Company Overview</span>
+                        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2 mb-3">
                             Who We Are
                         </h2>
                         <div class="w-16 h-1 bg-amberBrand mx-auto mb-7 rounded-full"></div>
@@ -779,8 +752,7 @@
                             We undertake turnkey projects across residential, commercial, industrial, and factory sectors. From initial schematic designs and authority approvals to physical execution, testing, and maintenance—our integrated management guarantees reliability.
                         </p>
 
-                        <div
-                            class="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap justify-center items-center gap-6 text-xs text-slate-500 font-medium font-grotesk">
+                        <div class="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap justify-center items-center gap-6 text-xs text-slate-500 font-medium font-grotesk">
                             <span class="flex items-center gap-1.5"><i class="fa-solid fa-gears text-electric"></i> Mechanical</span>
                             <span class="flex items-center gap-1.5"><i class="fa-solid fa-bolt text-amber-500"></i> Electrical</span>
                             <span class="flex items-center gap-1.5"><i class="fa-solid fa-faucet-drip text-cyan-600"></i> Plumbing</span>
@@ -791,11 +763,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <!-- 6. ADVANCED SPOTLIGHT SERVICE SHOWCASE (ONE BY ONE INTERACTIVE CAROUSEL WITH REAL REALISTIC IMAGES) -->
-        <section id="services" class="py-24 bg-slate-100 border-y border-slate-200">
+        <!-- 6. ADVANCED SPOTLIGHT SERVICE SHOWCASE -->
+        <section id="services" class="py-20 sm:py-24 bg-slate-100 border-y border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <span class="text-electric font-bold text-xs uppercase tracking-widest font-grotesk">Our Engineering Spectrum</span>
@@ -804,28 +775,23 @@
                     <p class="text-slate-600 text-sm sm:text-base">Explore our core engineering services one by one with live real-world visual demonstrations.</p>
                 </div>
 
-                <!-- Spotlight Service Showcase Box -->
                 <div class="service-spotlight-container">
                     <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
-                        
-                        <!-- Left: Real Realistic Image Stage -->
                         <div class="lg:col-span-7 spotlight-img-stage" id="spotlightStage">
                             <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85" class="spotlight-img active" alt="Mechanical Systems" data-index="0" />
                             <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Electrical Works" data-index="1" />
                             <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Plumbing Systems" data-index="2" />
-                            <img src="fire system.jpg" class="spotlight-img" alt="Fire Fighting" data-index="3" />
+                            <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Fire Fighting" data-index="3" />
                             <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="HVAC Systems" data-index="4" />
                             <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Power Electrical Works" data-index="5" />
-                            <!-- User Uploaded STP Sewage Treatment Plant Image added here -->
-                            <img src="STP Sewage Treatment Plant.jpg" class="spotlight-img" alt="STP Plant" data-index="6" />
+                            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="STP Plant" data-index="6" />
                             <img src="https://images.unsplash.com/photo-1574483984366-267988358485?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="WTP Plant" data-index="7" />
                             <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Projects Undertaken" data-index="8" />
                             <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Solar Installations" data-index="9" />
                             <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=85" class="spotlight-img" alt="Wind Mill Installation" data-index="10" />
                         </div>
 
-                        <!-- Right: Interactive Details & Navigation -->
-                        <div class="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between">
+                        <div class="lg:col-span-5 p-6 sm:p-12 flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-4">
                                     <span id="spotlightBadge" class="px-3 py-1 bg-blue-50 text-electric font-semibold text-xs rounded-md uppercase tracking-wider">Mechanical Engineering</span>
@@ -839,22 +805,18 @@
                                 <button onclick="prevSpotlightService()" class="spotlight-nav-btn" aria-label="Previous Service">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
-                                <div class="flex gap-1.5" id="spotlightDots">
-                                    <!-- Dynamic dots inserted by JS -->
-                                </div>
+                                <div class="flex gap-1.5" id="spotlightDots"></div>
                                 <button onclick="nextSpotlightService()" class="spotlight-nav-btn" aria-label="Next Service">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 7. PROJECTS UNDERTAKEN SHOWCASE (MOVING RIGHT TO LEFT LOOP: 1, 2, 3, 4, 1, 2...) -->
+        <!-- 7. PROJECTS UNDERTAKEN SHOWCASE -->
         <section id="projects" class="py-20 bg-white overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                 <div class="text-center max-w-3xl mx-auto">
@@ -865,10 +827,8 @@
                 </div>
             </div>
 
-            <!-- Marquee Moving Track -->
             <div class="projects-marquee-container">
                 <div class="projects-marquee-track">
-                    <!-- Original Set (1, 2, 3, 4) -->
                     <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm project-card-item">
                         <div class="w-12 h-12 bg-blue-100 text-electric rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-house-chimney"></i></div>
                         <h3 class="font-bold text-slate-900 text-lg mb-2">1. Residential Projects</h3>
@@ -890,7 +850,7 @@
                         <p class="text-xs text-slate-600">End-to-end execution from design to handover, including IT parks and specialized cold storage facilities.</p>
                     </div>
 
-                    <!-- Duplicate Set for Seamless Infinite Loop (1, 2, 3, 4) -->
+                    <!-- Duplicate for infinite loop -->
                     <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm project-card-item">
                         <div class="w-12 h-12 bg-blue-100 text-electric rounded-xl flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-house-chimney"></i></div>
                         <h3 class="font-bold text-slate-900 text-lg mb-2">1. Residential Projects</h3>
@@ -922,8 +882,7 @@
 
                     <div class="lg:col-span-5 space-y-8">
                         <div>
-                            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Connect With
-                                Us</span>
+                            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Connect With Us</span>
                             <h2 class="text-3xl font-display font-extrabold text-white mt-2 mb-3">Request a Consultation</h2>
                             <p class="text-slate-400 text-sm leading-relaxed">
                                 Reach out for tender inquiries, turnkey MEP design, solar/wind installations, STP/WTP plants, or government electrical approvals. Your details are securely saved for instant follow-up.
@@ -932,8 +891,7 @@
 
                         <div class="space-y-4 text-sm">
                             <div class="flex items-start gap-3">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 flex-shrink-0">
+                                <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 flex-shrink-0">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div>
@@ -947,22 +905,18 @@
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 flex-shrink-0">
+                                <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 flex-shrink-0">
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-slate-200">Phone Numbers</h4>
-                                    <a href="tel:+919488444672"
-                                        class="text-slate-400 hover:text-amber-400 block transition">+91 94884 44672</a>
-                                    <a href="tel:+919787744672"
-                                        class="text-slate-400 hover:text-amber-400 block transition">+91 97877 44672</a>
+                                    <a href="tel:+919488444672" class="text-slate-400 hover:text-amber-400 block transition">+91 94884 44672</a>
+                                    <a href="tel:+919787744672" class="text-slate-400 hover:text-amber-400 block transition">+91 97877 44672</a>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-pink-400 flex-shrink-0">
+                                <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-pink-400 flex-shrink-0">
                                     <i class="fa-brands fa-instagram"></i>
                                 </div>
                                 <div>
@@ -974,33 +928,26 @@
                         </div>
                     </div>
 
-                    <div
-                        class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-8 shadow-2xl border border-slate-200">
+                    <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-200">
                         <h3 class="text-2xl font-display font-extrabold text-slate-900 mb-2">Send an Instant Enquiry</h3>
                         <p class="text-slate-500 text-xs mb-6">Fill in your requirements below. This automatically records your details in our Google Sheet backend and opens WhatsApp for direct communication.</p>
 
                         <form id="consultationForm" class="space-y-4">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <label
-                                        class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your
-                                        Full Name *</label>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Your Full Name *</label>
                                     <input type="text" id="clientName" required
                                         class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:border-electric outline-none" />
                                 </div>
                                 <div>
-                                    <label
-                                        class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone
-                                        Number *</label>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Phone Number *</label>
                                     <input type="tel" id="clientPhone" required placeholder="+91 XXXXX XXXXX"
                                         class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:border-electric outline-none" />
                                 </div>
                             </div>
 
                             <div>
-                                <label
-                                    class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Service
-                                    Required *</label>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Service Required *</label>
                                 <select id="clientService"
                                     class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:border-electric outline-none">
                                     <option value="Mechanical Systems">Mechanical Systems</option>
@@ -1018,7 +965,7 @@
                             </div>
 
                             <button type="submit"
-                                class="w-full bg-gradient-to-r from-slate-900 to-electric hover:from-electric hover:to-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all text-sm tracking-wider uppercase flex items-center justify-center gap-2">
+                                class="w-full bg-gradient-to-r from-slate-900 to-electric hover:from-electric hover:to-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2">
                                 <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
                                 <span>Save to Google Sheet & Send Via WhatsApp</span>
                             </button>
@@ -1036,16 +983,16 @@
         <!-- 9. FLOATING ACTION BUTTONS -->
         <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
             <a href="https://www.instagram.com/baasith_consulting_engineers?stkn=ZHpjc3RtbXJkYmg4" target="_blank" title="Instagram"
-                class="w-14 h-14 bg-gradient-to-tr from-purple-600 via-pink-600 to-amber-500 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform">
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-purple-600 via-pink-600 to-amber-500 text-white rounded-full flex items-center justify-center text-xl sm:text-2xl shadow-2xl hover:scale-110 transition-transform">
                 <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://wa.me/919488444672?text=Hello%20BEC%20MEP%20Engineers,%20I%20would%20like%20to%20inquire%20about%20your%20services."
                 target="_blank" title="Chat on WhatsApp"
-                class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform">
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center text-xl sm:text-2xl shadow-2xl hover:scale-110 transition-transform">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a href="tel:+919488444672" title="Call Us Now"
-                class="w-14 h-14 bg-gradient-to-tr from-amberBrand to-yellow-500 text-slate-950 rounded-full flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-transform">
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-amberBrand to-yellow-500 text-slate-950 rounded-full flex items-center justify-center text-lg sm:text-xl shadow-2xl hover:scale-110 transition-transform">
                 <i class="fa-solid fa-phone"></i>
             </a>
         </div>
@@ -1053,10 +1000,9 @@
     </div>
 
     <!-- ====================================================
-         JAVASCRIPT: SPOTLIGHT CAROUSEL & GOOGLE SHEET BACKEND
+         JAVASCRIPT
     ==================================================== -->
     <script>
-        // 3. Spotlight One-by-One Advanced Service Carousel Engine with Real Realistic Unsplash Images
         const spotlightData = [
             {
                 badge: "Mechanical Engineering",
@@ -1123,7 +1069,6 @@
         const spotlightCounter = document.getElementById('spotlightCounter');
         const spotlightDotsContainer = document.getElementById('spotlightDots');
 
-        // Initialize dots
         spotlightData.forEach((_, idx) => {
             const dot = document.createElement('button');
             dot.className = `w-2.5 h-2.5 rounded-full transition-all ${idx === 0 ? 'bg-electric w-6' : 'bg-slate-300'}`;
@@ -1135,8 +1080,6 @@
 
         function updateSpotlightView(index) {
             currentSpotlightIndex = index;
-            
-            // Update images
             spotlightImages.forEach((img, idx) => {
                 if (idx === index) {
                     img.classList.add('active');
@@ -1145,13 +1088,11 @@
                 }
             });
 
-            // Update text
             spotlightBadge.innerText = spotlightData[index].badge;
             spotlightTitle.innerText = spotlightData[index].title;
             spotlightDesc.innerText = spotlightData[index].desc;
             spotlightCounter.innerText = `0${index + 1} / 0${spotlightData.length}`;
 
-            // Update dots
             Array.from(spotlightDotsContainer.children).forEach((dot, idx) => {
                 if (idx === index) {
                     dot.className = 'w-6 h-2.5 rounded-full bg-electric transition-all';
@@ -1175,10 +1116,8 @@
             updateSpotlightView(index);
         }
 
-        // Auto advance spotlight every 5 seconds
         setInterval(nextSpotlightService, 5000);
 
-        // Synchronized 3D Track-in 'C' Portal Zoom
         let hasFlyThroughDone = false;
 
         function runSynchronizedPortalZoom() {
@@ -1189,21 +1128,13 @@
             const website = document.getElementById('mainWebsiteContainer');
             const viewport = document.getElementById('portalViewport');
 
-            if (logoStage) {
-                logoStage.classList.add('zoom-logo-out');
-            }
-            if (website) {
-                website.classList.add('website-fly-in');
-            }
+            if (logoStage) logoStage.classList.add('zoom-logo-out');
+            if (website) website.classList.add('website-fly-in');
 
             setTimeout(() => {
-                if (viewport) {
-                    viewport.remove();
-                }
+                if (viewport) viewport.remove();
                 document.body.style.overflow = "auto";
-                if (website) {
-                    website.style.transform = "none";
-                }
+                if (website) website.style.transform = "none";
             }, 1350);
         }
 
@@ -1220,7 +1151,6 @@
             setTimeout(runSynchronizedPortalZoom, 2600);
         });
 
-        // 6. Navbar Logo Autoplay Support
         window.addEventListener('DOMContentLoaded', () => {
             const logoVid = document.getElementById('logoVideo');
             if (logoVid) {
@@ -1232,7 +1162,18 @@
             }
         });
 
-        // 7. Google Sheet Backend Integration & WhatsApp Form Handler
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if(mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+        }
+
         const form = document.getElementById('consultationForm');
         form.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -1240,10 +1181,8 @@
             const phone = document.getElementById('clientPhone').value.trim();
             const service = document.getElementById('clientService').value;
 
-            // Connected live Google Apps Script Web App URL
             const googleScriptURL = 'https://script.google.com/macros/s/AKfycbxhAmTDZbyI_gfK6d_0eK55K41bBVr8_PVdIglpP1kb-7RWKofUks6q9DaSRy1cAD4Wug/exec';
 
-            // Send data to Google Sheet via fetch
             if (googleScriptURL) {
                 fetch(googleScriptURL, {
                     method: 'POST',
@@ -1255,7 +1194,6 @@
                 }).catch(err => console.log('Sheet log error:', err));
             }
 
-            // Redirect / Open WhatsApp with query details
             const whatsappNumber = '919488444672';
             const text = `*New MEP Consultation Request*%0A` +
                 `*Name:* ${encodeURIComponent(name)}%0A` +
